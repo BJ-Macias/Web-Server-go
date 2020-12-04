@@ -1,0 +1,51 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Administrador de Calificaciones</title>
+        </head>
+        <body>
+
+            <form action="/Califica" method="POST" id="alumnoform">
+                <label>Nombre del Alumno:</label><br>
+                <input type="text" name="alumno" value="">
+
+                <label><br>Nombre de la Materia:</label><br>
+                <input type="text" name="materia" value="">
+
+                <label><br>Calificacion:</label><br>
+                <input type="text" name="califica" value="">
+
+                <input type="submit" value="Enviar">
+
+                <div class="my-3">
+                    %s
+                </div>
+
+            </form>
+
+            <form action="/Promedio" method="POST" id="alumnoform2">
+
+                <input type="submit" value="PromedioGeneral">
+
+            </form>
+
+            <form action="/PromedioAlumno" method="POST" id="alumnoform3">
+
+                <label>Nombre del Alumno a promediar:</label><br>
+                <input type="text" name="alumnoP" value="">
+
+                <input type="submit" value="Solicitar">
+
+            </form>
+
+            <form action="/PromedioMateria" method="POST" id="alumnoform4">
+
+                <label>Nombre de la Materia a promediar:</label><br>
+                <input type="text" name="materiaP" value="">
+
+                <input type="submit" value="Solicitar">
+
+            </form>
+            
+        </body>
+    </html>
